@@ -1,0 +1,481 @@
+gender,Nationality,PlaceofBirth,StageID,GradeID,SectionID,Topic,Second sememester,Guardian,Raised hands,Accessed resources,Viewed Announcements,Discussions participated,ParentAnsweringSurvey,ParentschoolSatisfaction,StudentAbsenceDays,Class
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,15,16,2,20,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,20,20,3,25,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,10,7,0,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,30,25,5,35,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,40,50,12,50,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,42,30,13,70,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,35,12,0,17,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,50,10,15,22,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,12,21,16,50,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Father,70,80,25,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,50,88,30,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Math,First sem,Father,19,6,19,12,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,First sem,Father,5,1,0,11,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Lebanese,lebanon,MiddleSchool,G-08,div-A,Math,First sem,Father,20,14,12,19,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Math,First sem,Mum,62,70,44,60,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-06,div-A,IT,First sem,Father,30,40,22,66,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Father,36,30,20,80,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,55,13,35,90,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Mum,69,15,36,96,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Mum,70,50,40,99,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,60,60,33,90,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Father,10,12,4,80,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,15,21,2,90,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,2,0,2,50,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Father,0,2,3,70,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,8,7,30,40,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Father,19,19,25,40,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,First sem,Father,25,15,12,33,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Science,First sem,Father,75,85,52,43,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,First sem,Father,30,90,33,35,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,First sem,Father,35,80,50,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,4,5,40,16,Parents answered survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-07,div-A,IT,First sem,Father,2,19,10,50,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-05,div-A,English,First sem,Father,8,22,9,40,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,First sem,Father,12,11,8,40,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,English,First sem,Father,10,12,17,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,First sem,Mum,8,6,4,22,Parents answered survey,Parents satisfied,over 7 absences,L
+Female,Egyptian,Egypt,MiddleSchool,G-07,div-A,IT,First sem,Father,45,54,26,90,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-06,div-A,IT,First sem,Father,0,0,0,4,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,SaudiArabia,SaudiArabia,MiddleSchool,G-07,div-B,Science,First sem,Father,50,90,37,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,14,13,3,70,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,19,20,16,50,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,HighSchool,G-09,div-A,IT,First sem,Father,10,12,7,33,Parents answered survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,HighSchool,G-09,div-A,IT,First sem,Father,30,35,28,90,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,HighSchool,G-09,div-A,IT,First sem,Father,33,33,30,90,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Quran,First sem,Father,20,12,15,70,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-05,div-A,English,First sem,Father,7,10,1,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Mum,70,4,39,90,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Mum,13,80,40,88,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Father,29,39,50,77,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Father,20,14,12,70,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Father,39,15,16,50,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Father,55,90,16,40,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,HighSchool,G-11,div-A,Science,First sem,Mum,49,70,19,75,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Mum,12,50,8,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,16,14,6,20,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,USA,USA,MiddleSchool,G-08,div-B,Math,First sem,Father,19,5,4,1,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,5,2,6,5,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,28,60,19,50,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,USA,USA,MiddleSchool,G-07,div-A,Math,First sem,Father,27,22,22,40,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-05,div-A,English,First sem,Mum,21,10,28,20,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,HighSchool,G-10,div-A,IT,First sem,Father,50,70,32,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Venezuelan,venzuela,HighSchool,G-10,div-A,IT,First sem,Mum,80,90,70,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,HighSchool,G-10,div-A,IT,First sem,Father,17,13,16,12,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,HighSchool,G-10,div-A,IT,First sem,Father,0,5,7,2,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Father,13,5,18,19,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,HighSchool,G-12,div-A,English,First sem,Father,25,10,19,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,USA,USA,HighSchool,G-12,div-A,English,First sem,Mum,65,75,23,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,USA,USA,HighSchool,G-12,div-A,IT,First sem,Mum,70,69,35,30,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,IT,First sem,Father,39,40,11,33,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,IT,First sem,Father,22,30,10,12,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,IT,First sem,Father,29,22,9,20,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,11,2,2,8,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,English,First sem,Father,19,30,26,19,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,First sem,Father,12,0,6,13,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Quran,First sem,Mum,50,90,29,60,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iranian,Iran,HighSchool,G-09,div-A,IT,First sem,Mum,15,70,37,44,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,HighSchool,G-09,div-A,IT,First sem,Father,20,80,33,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,HighSchool,G-11,div-A,Quran,First sem,Father,13,3,11,9,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Lebanese,lebanon,MiddleSchool,G-07,div-B,Math,First sem,Mum,80,90,49,55,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Math,First sem,Father,8,15,10,40,Parents answered survey,Parents unsatisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-A,IT,First sem,Father,8,25,1,70,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,7,5,2,80,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,7,4,10,50,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,50,70,50,10,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,1,0,1,12,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,SaudiArabia,SaudiArabia,lowerlevel,G-02,div-B,IT,First sem,Father,70,12,40,50,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,19,70,3,50,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,3,12,4,33,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,5,20,1,50,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,4,8,10,60,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,80,90,55,19,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,50,70,19,15,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,USA,USA,lowerlevel,G-02,div-B,IT,First sem,Father,55,89,40,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,80,44,35,10,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,100,80,2,70,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,14,60,11,75,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,6,2,38,12,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,10,3,0,30,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,50,7,9,50,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,50,90,40,90,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Mum,70,92,50,7,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,2,6,2,8,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,1,7,6,10,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,0,12,3,3,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,0,0,5,80,Parents answered survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,12,26,7,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,70,90,41,33,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,SaudiArabia,SaudiArabia,lowerlevel,G-02,div-B,IT,First sem,Father,7,12,5,3,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,90,70,30,14,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,IT,First sem,Mum,70,88,55,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,77,80,51,80,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,2,5,3,50,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,25,27,0,69,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,11,2,0,50,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,0,8,11,70,Parents answered survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Mum,77,80,12,19,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Mum,25,29,40,17,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Mum,24,35,23,22,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,60,60,3,60,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Mum,21,12,0,50,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Mum,0,4,8,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,66,90,55,12,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Lebanese,lebanon,lowerlevel,G-02,div-B,IT,First sem,Father,70,98,7,5,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,0,6,4,15,Parents answered survey,Parents unsatisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,12,30,0,17,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Iranian,Iran,lowerlevel,G-02,div-C,IT,First sem,Father,2,9,7,55,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,55,33,6,9,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,12,10,20,16,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,IT,First sem,Father,70,90,2,2,Parents answered survey,Parents satisfied,under 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,First sem,Father,7,9,5,30,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-C,IT,First sem,Father,80,42,20,50,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-C,IT,Second sem,Father,0,3,10,3,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-A,IT,Second sem,Father,12,60,0,70,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Quran,Second sem,Father,80,80,15,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Egyptian,Egypt,MiddleSchool,G-07,div-A,Quran,Second sem,Mum,70,80,95,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,USA,HighSchool,G-11,div-A,Quran,Second sem,Mum,70,80,95,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,USA,HighSchool,G-11,div-A,Quran,First sem,Mum,60,80,50,40,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Egypt,MiddleSchool,G-07,div-A,Quran,First sem,Mum,100,80,95,90,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,USA,MiddleSchool,G-07,div-A,Quran,First sem,Mum,100,85,85,70,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Tunis,Tunis,MiddleSchool,G-07,div-A,Quran,First sem,Father,10,60,5,20,Parents answered survey,Parents unsatisfied,over 7 absences,L
+Male,Tunis,Tunis,MiddleSchool,G-07,div-A,Quran,Second sem,Father,19,65,50,10,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Tunis,Tunis,MiddleSchool,G-07,div-A,Quran,Second sem,Father,10,75,55,11,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Quran,Second sem,Father,80,90,55,19,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-A,Quran,Second sem,Father,10,10,15,19,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Tunis,SaudiArabia,MiddleSchool,G-07,div-A,Quran,Second sem,Father,70,75,55,11,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Lebanese,lebanon,MiddleSchool,G-07,div-A,Quran,Second sem,Mum,100,75,50,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Lebanese,lebanon,MiddleSchool,G-07,div-A,Quran,Second sem,Father,10,79,30,30,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-A,Quran,Second sem,Father,60,55,30,40,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,lebanon,MiddleSchool,G-07,div-A,Quran,Second sem,Mum,100,75,50,70,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,SaudiArabia,SaudiArabia,HighSchool,G-11,div-A,Quran,Second sem,Father,80,80,51,59,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,SaudiArabia,USA,HighSchool,G-11,div-A,Science,Second sem,Father,23,63,71,89,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,SaudiArabia,USA,HighSchool,G-11,div-B,Science,Second sem,Father,100,91,98,40,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,SaudiArabia,USA,HighSchool,G-11,div-B,Spanish,Second sem,Father,10,51,40,40,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,SaudiArabia,USA,HighSchool,G-11,div-B,English,Second sem,Father,70,50,33,41,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,SaudiArabia,USA,HighSchool,G-11,div-B,Math,Second sem,Father,70,58,73,91,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Tunis,USA,HighSchool,G-11,div-B,French,Second sem,Father,70,50,30,49,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Tunis,Tunis,HighSchool,G-11,div-B,Science,Second sem,Father,70,50,33,40,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Tunis,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Father,22,51,48,10,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Father,62,68,48,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-B,Science,Second sem,Mum,82,89,58,50,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-B,Science,Second sem,Mum,72,80,58,66,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,70,82,3,73,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,USA,lowerlevel,G-02,div-B,French,Second sem,Mum,60,82,93,43,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,55,72,83,14,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Morocco,Morocco,lowerlevel,G-02,div-B,French,Second sem,Mum,72,65,73,66,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,French,Second sem,Mum,51,82,53,43,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Tunis,Tunis,lowerlevel,G-02,div-B,French,Second sem,Mum,80,92,83,43,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,French,Second sem,Mum,60,52,23,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,French,Second sem,Mum,30,12,29,23,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,French,Second sem,Father,40,62,83,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-02,div-B,French,Second sem,Mum,60,52,23,33,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Iranian,Iran,lowerlevel,G-02,div-B,French,Second sem,Mum,20,22,53,13,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Syria,Syria,lowerlevel,G-02,div-B,French,Second sem,Mum,20,52,23,33,Parents answered survey,Parents satisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Father,50,62,73,43,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Iranian,Iran,lowerlevel,G-02,div-B,French,Second sem,Father,10,2,13,53,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Tunis,Tunis,lowerlevel,G-02,div-B,French,Second sem,Mum,60,52,23,33,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,USA,USA,lowerlevel,G-02,div-B,French,Second sem,Mum,15,52,83,11,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Lebanese,lebanon,lowerlevel,G-02,div-B,French,Second sem,Mum,80,42,33,13,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Lebanese,lebanon,lowerlevel,G-02,div-B,French,Second sem,Mum,40,51,20,33,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,SaudiArabia,SaudiArabia,lowerlevel,G-02,div-B,French,Second sem,Father,60,70,63,93,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Father,50,62,13,33,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,85,75,62,53,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Lebanese,lebanon,MiddleSchool,G-08,div-A,Arabic,Second sem,Father,25,15,32,53,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Lebanese,lebanon,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,10,35,30,13,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Lebanese,Jordan,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,87,65,82,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,85,15,22,53,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Father,80,71,52,51,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,75,71,72,53,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Father,85,66,12,23,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Father,23,25,32,53,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Father,15,25,37,13,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,95,91,62,53,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Morocco,Morocco,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,81,75,62,53,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Morocco,Morocco,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,53,75,72,23,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Father,15,43,42,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,92,65,62,53,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,83,75,62,53,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Morocco,Morocco,MiddleSchool,G-08,div-B,Arabic,Second sem,Father,27,15,42,53,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Arabic,Second sem,Father,45,95,12,13,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Arabic,Second sem,Mum,15,90,52,83,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Lebanese,lebanon,MiddleSchool,G-08,div-A,Arabic,Second sem,Mum,45,58,52,43,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Arabic,Second sem,Father,25,5,12,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Arabic,Second sem,Father,22,51,42,40,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-B,Arabic,Second sem,Father,29,10,12,24,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,SaudiArabia,SaudiArabia,MiddleSchool,G-08,div-B,Arabic,Second sem,Mum,72,51,42,24,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Arabic,Second sem,Father,67,31,42,14,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,17,21,42,14,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Tunis,Tunis,MiddleSchool,G-08,div-C,Spanish,Second sem,Mum,27,41,49,14,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,70,81,39,84,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-C,Spanish,Second sem,Mum,27,90,82,14,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,17,61,42,14,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Tunis,Tunis,MiddleSchool,G-08,div-C,Spanish,Second sem,Mum,87,81,42,19,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Tunis,Tunis,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,7,61,22,14,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,17,50,2,4,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,5,21,42,14,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Iranian,Iran,MiddleSchool,G-08,div-C,Spanish,Second sem,Mum,27,41,32,61,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Female,Jordanian,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,87,88,40,10,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Mum,96,61,42,94,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-C,Spanish,Second sem,Mum,57,51,46,34,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Lebanese,lebanon,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,77,69,41,13,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Lebanese,lebanon,MiddleSchool,G-08,div-C,Spanish,Second sem,Father,80,51,40,24,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Spanish,Second sem,Father,62,61,82,40,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Spanish,Second sem,Mum,72,83,12,90,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Spanish,Second sem,Mum,87,81,22,70,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Spanish,Second sem,Mum,72,90,12,30,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-B,Spanish,Second sem,Father,2,11,62,30,Parents did not answer survey,Parents unsatisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Spanish,Second sem,Father,5,3,2,10,Parents answered survey,Parents satisfied,under 7 absences,L
+Male,Kuwaiti,KuwaIT,HighSchool,G-11,div-B,Math,Second sem,Mum,73,84,77,81,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-08,div-A,Spanish,Second sem,Father,5,17,21,10,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Iranian,Iran,MiddleSchool,G-08,div-A,Spanish,Second sem,Mum,51,42,12,29,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,Syria,Jordan,MiddleSchool,G-08,div-A,Spanish,Second sem,Father,9,7,21,20,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Syria,Syria,MiddleSchool,G-07,div-A,Quran,First sem,Father,19,72,15,50,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-B,Science,Second sem,Mum,32,80,58,46,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Mum,32,60,58,66,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Father,12,8,18,26,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-B,Science,Second sem,Father,52,10,13,6,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Father,72,80,58,66,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Mum,72,80,58,66,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Egyptian,Egypt,MiddleSchool,G-07,div-B,Science,Second sem,Mum,92,80,88,76,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Mum,72,80,98,96,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Egyptian,Egypt,MiddleSchool,G-07,div-B,Science,Second sem,Father,72,80,58,86,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Father,22,20,18,6,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Egyptian,KuwaIT,MiddleSchool,G-07,div-B,Science,Second sem,Father,12,20,38,46,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,MiddleSchool,G-07,div-B,IT,Second sem,Mum,70,92,83,85,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-06,div-A,IT,Second sem,Father,50,40,52,66,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-06,div-A,Science,Second sem,Father,80,94,62,77,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-06,div-A,Math,Second sem,Father,87,48,82,96,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,MiddleSchool,G-06,div-A,Quran,Second sem,Father,70,40,2,16,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,IT,Second sem,Father,65,86,62,40,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,Math,Second sem,Father,15,6,32,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Egyptian,Egypt,lowerlevel,G-04,div-A,English,Second sem,Mum,19,74,32,17,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,Science,Second sem,Father,69,76,82,94,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,Arabic,Second sem,Father,39,26,12,44,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,English,Second sem,Father,59,97,42,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Father,10,17,12,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Mum,80,87,72,60,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Father,70,99,66,65,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Father,80,97,86,95,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,English,Second sem,Mum,69,34,12,17,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Father,10,17,12,14,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Father,61,97,82,64,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Female,Kuwaiti,KuwaIT,lowerlevel,G-04,div-A,History,Second sem,Mum,21,27,52,34,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Egyptian,Egypt,lowerlevel,G-04,div-A,Math,Second sem,Mum,49,94,42,7,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,70,64,42,32,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,79,84,82,37,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Father,19,80,12,17,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Father,11,70,32,29,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Father,10,8,10,10,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Father,18,28,40,20,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,90,84,52,30,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,92,81,32,36,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Father,42,21,2,16,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Father,22,20,6,26,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Lebanese,lebanon,MiddleSchool,G-06,div-A,English,First sem,Mum,95,82,82,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Lebanese,lebanon,MiddleSchool,G-06,div-A,English,Second sem,Mum,90,62,80,60,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,72,21,22,26,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,92,31,42,27,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,82,31,52,25,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,72,41,46,27,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-06,div-A,English,First sem,Mum,74,71,56,37,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-06,div-A,English,Second sem,Mum,74,60,56,37,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,95,94,72,80,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,97,87,82,86,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Father,40,38,32,36,Parents did not answer survey,Parents unsatisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Father,41,39,35,39,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,51,79,85,89,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,81,79,91,85,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-06,div-A,English,First sem,Mum,71,70,65,69,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-06,div-A,English,Second sem,Mum,75,71,76,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,First sem,Father,49,36,32,44,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,Second sem,Father,42,24,12,24,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Palestine,Palestine,lowerlevel,G-04,div-A,Science,First sem,Mum,90,86,82,74,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Palestine,Palestine,lowerlevel,G-04,div-A,Science,Second sem,Mum,62,64,72,84,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,lowerlevel,G-04,div-A,Science,First sem,Father,90,86,82,74,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Iraq,Iraq,lowerlevel,G-04,div-A,Science,Second sem,Father,62,64,72,84,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,First sem,Mum,98,87,86,84,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,Second sem,Mum,72,74,82,89,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,First sem,Father,18,17,26,34,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,Second sem,Father,32,14,32,29,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,First sem,Father,10,12,20,13,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-04,div-A,Science,Second sem,Father,22,34,15,9,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,First sem,Mum,11,20,21,23,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,Second sem,Mum,12,44,25,39,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,First sem,Father,15,50,24,43,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,Second sem,Father,32,44,29,89,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,First sem,Mum,65,59,74,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,Second sem,Mum,72,64,59,89,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,lowerlevel,G-04,div-B,Science,First sem,Mum,95,57,74,89,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Palestine,Jordan,lowerlevel,G-04,div-B,Science,Second sem,Mum,82,84,79,79,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,First sem,Father,25,29,34,33,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,Second sem,Father,42,34,29,39,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,First sem,Mum,55,79,44,43,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-04,div-B,Science,Second sem,Mum,62,64,69,49,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,lebanon,lowerlevel,G-04,div-B,Science,First sem,Mum,78,88,74,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,lebanon,lowerlevel,G-04,div-B,Science,Second sem,Mum,72,84,89,89,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Mum,60,92,83,23,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Mum,50,90,83,13,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Mum,60,97,13,3,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Mum,50,95,23,10,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Mum,60,87,23,11,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Mum,50,80,20,15,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Father,10,15,10,21,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Father,30,10,20,5,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Syria,Syria,lowerlevel,G-02,div-A,French,First sem,Father,24,35,18,31,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Syria,Syria,lowerlevel,G-02,div-A,French,Second sem,Father,27,20,33,35,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Father,10,15,10,21,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Father,30,10,20,5,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Palestine,lowerlevel,G-02,div-A,French,First sem,Mum,80,77,63,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Palestine,lowerlevel,G-02,div-A,French,Second sem,Mum,75,85,73,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Father,40,7,50,41,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Father,35,2,29,33,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,French,First sem,Mum,10,90,30,21,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,French,Second sem,Mum,25,80,29,23,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Lybia,Lybia,lowerlevel,G-02,div-A,French,First sem,Mum,10,8,9,3,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Lybia,Lybia,lowerlevel,G-02,div-A,French,Second sem,Mum,15,7,12,7,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Palestine,Jordan,lowerlevel,G-02,div-A,French,First sem,Mum,70,90,20,21,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Palestine,Jordan,lowerlevel,G-02,div-A,French,Second sem,Mum,75,80,15,20,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Palestine,Jordan,lowerlevel,G-02,div-B,French,First sem,Father,78,98,10,11,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Palestine,Jordan,lowerlevel,G-02,div-B,French,Second sem,Father,79,89,11,14,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Iraq,Iraq,lowerlevel,G-02,div-B,French,First sem,Father,16,90,15,11,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Iraq,Iraq,lowerlevel,G-02,div-B,French,Second sem,Father,17,80,13,10,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,First sem,Mum,40,87,50,41,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,35,92,29,33,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,First sem,Mum,14,97,15,14,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,First sem,Mum,13,82,20,30,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,24,97,15,14,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,23,82,20,30,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Lybia,Lybia,lowerlevel,G-02,div-B,French,First sem,Mum,20,3,9,3,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Lybia,Lybia,lowerlevel,G-02,div-B,French,Second sem,Mum,15,4,12,7,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Egyptian,Egypt,lowerlevel,G-02,div-B,French,First sem,Mum,5,13,6,6,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Egyptian,Egypt,lowerlevel,G-02,div-B,French,Second sem,Mum,7,9,11,10,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,First sem,Mum,10,94,40,11,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,25,89,21,13,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,First sem,Mum,30,98,42,21,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Mum,35,97,41,23,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,First sem,Father,32,88,32,25,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,French,Second sem,Father,25,87,21,27,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Lebanese,lebanon,lowerlevel,G-02,div-B,French,First sem,Mum,72,98,52,15,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Lebanese,lebanon,lowerlevel,G-02,div-B,French,Second sem,Mum,75,90,51,17,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,First sem,Father,20,88,31,28,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,Second sem,Father,10,98,41,38,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Palestine,Jordan,lowerlevel,G-02,div-A,Arabic,First sem,Father,90,98,41,38,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,lowerlevel,G-02,div-A,Arabic,Second sem,Father,80,88,51,39,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,lowerlevel,G-02,div-A,Arabic,First sem,Father,80,95,21,28,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,lowerlevel,G-02,div-A,Arabic,Second sem,Father,78,70,31,29,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,First sem,Father,10,18,71,38,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,Second sem,Father,10,58,51,48,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Palestine,Jordan,lowerlevel,G-02,div-A,Arabic,First sem,Mum,98,88,60,31,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Palestine,Jordan,lowerlevel,G-02,div-A,Arabic,Second sem,Mum,75,81,51,34,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,First sem,Father,10,17,50,21,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,Second sem,Father,35,2,29,23,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,First sem,Father,10,20,22,97,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-02,div-A,Arabic,Second sem,Father,5,9,19,98,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,First sem,Father,10,10,40,51,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,Second sem,Father,35,2,29,23,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,First sem,Mum,20,90,50,61,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,Second sem,Mum,32,82,59,63,Parents answered survey,Parents unsatisfied,over 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,First sem,Father,10,30,50,91,Parents answered survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,Second sem,Father,12,22,59,83,Parents answered survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,First sem,Father,11,20,20,98,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,Second sem,Father,10,12,29,93,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Iraq,Iraq,lowerlevel,G-02,div-B,Arabic,First sem,Mum,69,82,20,28,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,lowerlevel,G-02,div-B,Arabic,Second sem,Mum,70,83,29,33,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Iraq,Iraq,lowerlevel,G-02,div-B,Arabic,First sem,Mum,89,92,40,28,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Iraq,Iraq,lowerlevel,G-02,div-B,Arabic,Second sem,Mum,79,93,49,23,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,First sem,Mum,15,90,21,97,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,lowerlevel,G-02,div-B,Arabic,Second sem,Mum,20,77,31,88,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,SaudiArabia,lowerlevel,G-02,div-B,Arabic,First sem,Mum,4,10,11,7,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Jordanian,SaudiArabia,lowerlevel,G-02,div-B,Arabic,Second sem,Mum,5,0,1,8,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,First sem,Mum,88,81,50,10,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,Second sem,Mum,90,88,54,12,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Iraq,Iraq,MiddleSchool,G-07,div-A,Biology,First sem,Mum,86,98,50,20,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Iraq,Iraq,MiddleSchool,G-07,div-A,Biology,Second sem,Mum,90,90,57,22,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Palestine,MiddleSchool,G-07,div-A,Biology,First sem,Mum,78,91,50,40,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Palestine,MiddleSchool,G-07,div-A,Biology,Second sem,Mum,70,98,54,72,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,First sem,Father,80,80,46,61,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,Second sem,Father,85,82,59,63,Parents answered survey,Parents unsatisfied,under 7 absences,H
+Male,Palestine,Palestine,MiddleSchool,G-07,div-A,Biology,First sem,Father,88,90,86,81,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Palestine,MiddleSchool,G-07,div-A,Biology,Second sem,Father,89,92,89,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,First sem,Father,39,71,40,26,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,Second sem,Father,35,80,34,22,Parents did not answer survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,First sem,Father,76,81,80,86,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,Second sem,Father,65,89,64,82,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Syria,Syria,MiddleSchool,G-07,div-A,Biology,First sem,Mum,96,95,70,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Syria,Syria,MiddleSchool,G-07,div-A,Biology,Second sem,Mum,80,91,87,72,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,First sem,Mum,2,9,10,1,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-A,Biology,Second sem,Mum,3,8,19,3,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-B,Biology,First sem,Father,50,79,10,31,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-07,div-B,Biology,Second sem,Father,53,88,9,33,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-B,Biology,First sem,Mum,70,89,12,21,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-07,div-B,Biology,Second sem,Mum,59,90,19,43,Parents did not answer survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-07,div-B,Biology,First sem,Father,78,80,66,51,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-07,div-B,Biology,Second sem,Father,79,72,79,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Lybia,Lybia,MiddleSchool,G-07,div-B,Biology,First sem,Mum,10,9,2,1,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Female,Lybia,Lybia,MiddleSchool,G-07,div-B,Biology,Second sem,Mum,9,7,9,3,Parents did not answer survey,Parents satisfied,over 7 absences,L
+Male,Iraq,Iraq,MiddleSchool,G-07,div-B,Biology,First sem,Father,98,90,86,71,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-07,div-B,Biology,Second sem,Father,89,92,89,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-07,div-B,Biology,First sem,Father,88,90,76,81,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-07,div-B,Biology,Second sem,Father,99,96,89,84,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Mum,82,89,22,31,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Mum,84,92,29,43,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Mum,70,69,46,45,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Mum,74,62,49,43,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Mum,90,79,76,79,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Mum,84,77,79,68,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Mum,80,80,62,11,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Mum,81,82,69,13,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-A,Chemistry,First sem,Father,10,0,2,41,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-A,Chemistry,Second sem,Father,11,2,9,49,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-A,Geology,First sem,Father,85,89,22,61,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-A,Geology,Second sem,Father,80,89,23,68,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-A,Geology,First sem,Father,95,87,62,81,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,SaudiArabia,MiddleSchool,G-08,div-A,Geology,Second sem,Father,87,79,73,98,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Mum,85,87,72,10,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Mum,79,88,79,20,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Mum,80,81,71,30,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Mum,70,83,70,23,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Mum,80,82,76,19,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Mum,70,82,75,29,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Mum,89,87,86,15,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Mum,90,86,85,10,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,First sem,Mum,69,77,76,75,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,Second sem,Mum,70,76,65,70,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Mum,75,72,64,39,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Mum,72,76,66,40,Parents answered survey,Parents satisfied,over 7 absences,L
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Mum,77,82,74,79,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Mum,71,84,67,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,First sem,Mum,87,92,74,89,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,Second sem,Mum,81,84,77,85,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Father,15,97,22,10,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Father,19,98,20,2,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Father,25,82,52,20,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Father,29,78,40,12,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,First sem,Father,45,87,57,80,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,Second sem,Father,39,88,43,72,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Father,85,90,52,30,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Father,79,91,49,22,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-08,div-A,Chemistry,First sem,Father,90,91,80,81,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-08,div-A,Chemistry,Second sem,Father,80,90,80,83,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-08,div-A,Geology,First sem,Father,80,83,82,71,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-08,div-A,Geology,Second sem,Father,71,81,83,72,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-08,div-A,History,First sem,Father,72,87,72,89,Parents answered survey,Parents satisfied,over 7 absences,H
+Male,Iraq,Iraq,MiddleSchool,G-08,div-A,History,Second sem,Father,69,77,83,92,Parents answered survey,Parents satisfied,over 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Mum,85,99,42,90,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Mum,89,96,45,92,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Mum,80,82,64,58,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Mum,87,93,63,60,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Father,15,9,14,80,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Father,9,6,15,85,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Male,Palestine,Jordan,MiddleSchool,G-08,div-A,History,First sem,Father,81,86,86,41,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Jordan,MiddleSchool,G-08,div-A,History,Second sem,Father,78,82,78,53,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Palestine,MiddleSchool,G-08,div-A,Geology,First sem,Father,80,87,74,68,Parents answered survey,Parents satisfied,under 7 absences,H
+Male,Palestine,Palestine,MiddleSchool,G-08,div-A,Geology,Second sem,Father,85,88,79,70,Parents answered survey,Parents satisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,First sem,Father,2,7,4,8,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Chemistry,Second sem,Father,5,4,5,8,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,First sem,Father,50,77,14,28,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,Geology,Second sem,Father,55,74,25,29,Parents did not answer survey,Parents unsatisfied,under 7 absences,H
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,First sem,Father,30,17,14,57,Parents did not answer survey,Parents unsatisfied,over 7 absences,L
+Female,Jordanian,Jordan,MiddleSchool,G-08,div-A,History,Second sem,Father,35,14,23,62,Parents did not answer survey,Parents unsatisfied,over 7 absences,L

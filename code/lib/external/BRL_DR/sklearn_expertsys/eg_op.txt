@@ -1,0 +1,10 @@
+=======================================================
+IF Raised hands : -inf_to_5.5 THEN probability of Performs well: 9.4% (2.0%-21.4%)
+ELSE IF Accessed resources : 76.5_to_inf THEN probability of Performs well: 99.3% (97.4%-100.0%)
+ELSE IF Female AND Parents answered survey THEN probability of Performs well: 97.1% (89.4%-99.9%)
+ELSE IF Discussions participated : -inf_to_10.5 THEN probability of Performs well: 15.8% (3.6%-34.7%)
+ELSE IF under 7 absences THEN probability of Performs well: 93.1% (86.2%-97.7%)
+ELSE IF Science AND Parents satisfied THEN probability of Performs well: 85.7% (54.1%-99.6%)
+ELSE IF Accessed resources : -inf_to_30.5 AND Raised hands : 5.5_to_43.5 THEN probability of Performs well: 8.7% (2.5%-18.3%)
+ELSE probability of Performs well: 63.0% (44.3%-79.8%)
+======================================================

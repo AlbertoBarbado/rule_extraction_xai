@@ -20,6 +20,7 @@ from itertools import combinations, permutations, product
 from shapely.geometry import Polygon
 from sklearn.preprocessing import StandardScaler
 from aix360.algorithms.protodash import ProtodashExplainer
+from sklearn.metrics import precision_score, recall_score, f1_score
 
 N_JOBS = 1
 
@@ -641,15 +642,53 @@ def checkDiversity(df_rules, numerical_cols, categorical_cols):
     return df_original, df_return
 
 
-def checkRepresentativeness(
-    df_anomalies, df_rules_inliers, df_rules_outliers, numerical_cols, categorical_cols,
-    col_predictions="predictions"
+def checkFidelity(
+    df_anomalies, df_rules_inliers, df_rules_outliers, numerical_cols, categorical_cols
 ):
     """
-    This function computes metrics regarding the representativness of the rules.
-    First, it obtains how many inliers/outliers are within each of the rules.
-    Then, it sees how many total inlers/outliers are covered by all the rules,
-    as well as only by P@1 rules.
+    This function gets the following XAI metrics:
+        - Fidelity: XAI rule predictions vs model predictions
+        - Representativeness: Coverage from XAI rules over the model predictions
+        - Focus on the Abnormal: Specific use-case of "fidelity" focused on the most
+        significant outliers/inliers.
+    
+    First, it obtains the predictions for the outlier/inlier rules over the 
+    input dataset, and checks how many outlier/inliers are within each rule 
+    (representativeness).
+    Columns associated:
+        - 'n_inliers_included': number of inlier datapoints included within
+        each rule.
+        - 'n_outliers_included': number of outlier datapoints included within
+        each rule.
+        
+    Then, it checks how many inlier datapoints are covered with the rules,
+    as well as how many outlier datapoints. For that, it both uses every rule,
+    as well as P@1 rules (representativeness).
+    Columns associated (for inlier rules):
+        - 'n_inliers': number of total inlier datapoints.
+        - 'n_inliers_p0': number of inlier datapoints included within all rules.
+        - 'n_inliers_p1': number of inlier datapoints included within P@1 rules.
+    Columns associated (for outlier rules):
+        - 'n_outliers': number of total outliers datapoints.
+        - 'n_outliers_p0': number of outliers datapoints included within all rules.
+        - 'n_outliers_p1': number of outliers datapoints included within P@1 rules.
+    
+    Then, using the rule prediction over the input dataset, it computes
+    the precision, recall and F1 (weighted) for the inlier and outlier rules 
+    with respect to the model prediction (fidelity).
+    Columns associated:
+        - 'precision_rules': precision over the model predictions for this set of rules
+        - 'recall_rules': recall over the model predictions for this set of rules
+        - 'f1_rules': f1 (weighted) over the model predictions for this set of rules
+    
+    Finally, it performs that same calculation but considering only the 
+    datapoints that are further from the decision function, using the
+    distances that are over the limits of the boxplot of those distances
+    (focus on the abnormal).
+    Columns associated:
+        - 'precision_rules_abnormal': same as "precision_rules" but for "abnormal" points
+        - 'recall_rules_abnormal': same as "recall_rules" but for "abnormal" points
+        - 'f1_rules_abnormal': same as "f1_rules" but for "abnormal" points
 
     Parameters
     ----------
@@ -678,86 +717,113 @@ def checkRepresentativeness(
         list with the numerical features.
     categorical_cols : list
         list with the caategorical feartures.
-    col_predictions : str
-        name of the column from df_anomalies where the predictions are.
-
+        
     Returns
     -------
     df_rules_inliers : dataframe
         Dataframe with the original columns from the inliers rules with additional 
         columns containing the metric results. These columns are:
-        - 'n_inliers_included': number of inlier datapoints included within
-        each rule.
-        - 'n_outliers_included': number of outlier datapoints included within
-        each rule.
-        - 'n_inliers': number of total inlier datapoints.
-        - 'n_inliers_p0': number of inlier datapoints included within all rules.
-        - 'n_inliers_p1': number of inlier datapoints included within P@1 rules.
+            'n_inliers_included','n_outliers_included', 'n_inliers', 
+            'n_inliers_p0', 'n_inliers_p1', 'precision_rules', 'recall_rules',
+            'f1_rules', 'precision_rules_abnormal', 'recall_rules_abnormal',
+            'f1_rules_abnormal'
         
     df_rules_outliers : dataframe
         Dataframe with the original columns from the outliers rules with additional 
         columns containing the metric results. These columns are:
-        - 'n_inliers_included': number of inlier datapoints included within
-        each rule.
-        - 'n_outliers_included': number of outlier datapoints included within
-        each rule.
-        - 'n_outliers': number of total outliers datapoints.
-        - 'n_outliers_p0': number of outliers datapoints included within all rules.
-        - 'n_outliers_p1': number of outliers datapoints included within P@1 rules.
+            'n_inliers_included', 'n_outliers_included', 'n_outliers',
+            'n_outliers_p1', 'n_outliers_p0', 'precision_rules', 'recall_rules',
+            'f1_rules', 'precision_rules_abnormal', 'recall_rules_abnormal',
+            'f1_rules_abnormal'
+            
+    df_anomalies : dataframe
+        Dataframe with the original columns from the df_anomalies with  
+        these additional columns:
+            'y_pred_rules_inliers': predictions based on the inlier rules
+            'y_pred_rules_outliers': predictions based on the outlier rules
     """
     
-    # Init param
+    # =======================================================================
+    # Fidelity & Representativeness
+    # =======================================================================
+    
+    ### 0. Initial parameters
+    # Init setup
     feature_cols = numerical_cols + categorical_cols
     df_rules_inliers = df_rules_inliers.copy()
     df_rules_outliers = df_rules_outliers.copy()
-
-    # =======================================================================
-    # 1. Get Inliers/Outliers inside rules
-    # =======================================================================
-    print("Checking inliers inside rules for inliers/outliers...")
+    # List for the rules prediction over the input dataset
+    list_pred_inliers = []
+    list_pred_outliers = []
+    # Parameters for Representativeness (I)
     df_rules_inliers["n_inliers_included"] = 0
     df_rules_outliers["n_inliers_included"] = 0
-    for i, data_point in df_anomalies[df_anomalies[col_predictions] == 1].iterrows():
-        df_rules_inliers["n_inliers_included"] += checkPointInside(
-            data_point, df_rules_inliers, feature_cols, []
-        )["check"]
-
-        df_rules_outliers["n_inliers_included"] += checkPointInside(
-            data_point, df_rules_outliers, feature_cols, []
-        )["check"]
-        
-    print("Checking outliers inside rules for inliers/outliers...")
     df_rules_inliers["n_outliers_included"] = 0
     df_rules_outliers["n_outliers_included"] = 0
-    for i, data_point in df_anomalies[df_anomalies[col_predictions] == -1].iterrows():
-        df_rules_inliers["n_outliers_included"] += checkPointInside(
-            data_point, df_rules_inliers, feature_cols, []
-        )["check"]
-
-        df_rules_outliers["n_outliers_included"] += checkPointInside(
-            data_point, df_rules_outliers, feature_cols, []
-        )["check"]
-        
-    # Check how many datapoints are included with the rules with Precision=1 
-    # and in general
-    print("Checking inliers/outliers inside hypercubes with Precision=1...")
+    # Parameters for Representativeness (II)
     n_inliers_p1 = 0
     n_inliers_p0 = 0
     n_outliers_p1 = 0
     n_outliers_p0 = 0
-    n_inliers = len(df_anomalies[df_anomalies[col_predictions] == 1])
-    n_outliers = len(df_anomalies[df_anomalies[col_predictions] == -1])
-
+    n_inliers = len(df_anomalies[df_anomalies["predictions"] == 1])
+    n_outliers = len(df_anomalies[df_anomalies["predictions"] == -1])
+    
+    # Iter per each datapoint
+    print("Getting rule predictions...")
+    n_ref = len(df_anomalies)
     for i, data_point in df_anomalies.iterrows():
+        if i%500==0:
+            print("Iter {0}/{1}".format(i, n_ref))
+            
+        ## 1. Get rule prediction over the input dataset
+        # See if datapoint is inside inliers rules
         df_rules_inliers["check"] = checkPointInside(
             data_point, df_rules_inliers, feature_cols, []
         )["check"]
+        # See if datapoint is inside outliers rules
+        df_rules_outliers["check"] = checkPointInside(
+            data_point, df_rules_outliers, feature_cols, []
+        )["check"]
+        # Prediction for inlier rules: 1 if inside at least one of them, -1 otherwise
+        n_pred_inliers = max(df_rules_inliers["check"])
+        n_pred_inliers = 1 if n_pred_inliers==1 else -1
+        list_pred_inliers.append(n_pred_inliers)
+        # Prediction for outlier rules: -1 if inside at least one of them, 1 otherwise
+        n_pred_outliers = max(df_rules_outliers["check"])
+        n_pred_outliers = -1 if n_pred_outliers==1 else 1
+        list_pred_outliers.append(n_pred_outliers)
+        
+        ## 2. Representativeness metrics (I)
+        # If Inlier (predicted by model)
+        if data_point['predictions']==1:
+            ## 2.1 Count how many inliers are within each rule
+            df_rules_inliers["n_inliers_included"] += df_rules_inliers["check"]
+            df_rules_outliers["n_inliers_included"] += df_rules_outliers["check"]
+            
+        # If Outlier (predicted by model)
+        if data_point['predictions']==-1:
+            ## 2.2 Count how many outliers are within each rule
+            df_rules_inliers["n_outliers_included"] += df_rules_inliers["check"]
+            df_rules_outliers["n_outliers_included"] += df_rules_outliers["check"]
+            
+    ## 3. Representativeness metrics (II)
+    print()
+    print("Getting rule coverage...")
+    for i, data_point in df_anomalies.iterrows():
+        if i%500==0:
+            print("Iter {0}/{1}".format(i, n_ref))
+        # See if datapoint is inside inliers rules
+        df_rules_inliers["check"] = checkPointInside(
+            data_point, df_rules_inliers, feature_cols, []
+        )["check"]
+        # See if datapoint is inside outliers rules
         df_rules_outliers["check"] = checkPointInside(
             data_point, df_rules_outliers, feature_cols, []
         )["check"]
         
-        # If inlier
-        if data_point[col_predictions] == 1:
+        # If Inlier (predicted by model)
+        if data_point['predictions']==1:
+            ## 3.1 Total coverage with every rule & P@1 rules for inliers
             # Rules with any P and that include this datapoint
             df_aux = df_rules_inliers[(df_rules_inliers["check"] == 1)]
             if len(df_aux) > 0:
@@ -770,8 +836,9 @@ def checkRepresentativeness(
             if len(df_aux) > 0:
                 n_inliers_p1 += 1
                 
-        # If outlier
-        elif data_point[col_predictions] == -1:
+        # If Outlier (predicted by model)
+        if data_point['predictions']==-1:
+            ## 3.2 Total coverage with every rule & P@1 rules for outliers
             # Rules with any P and that include this datapoint
             df_aux = df_rules_outliers[(df_rules_outliers["check"] == 1)]
             if len(df_aux) > 0:
@@ -784,19 +851,112 @@ def checkRepresentativeness(
             if len(df_aux) > 0:
                 n_outliers_p1 += 1
                 
+    # Predictions with the rules
+    df_anomalies['y_pred_rules_inliers'] = list_pred_inliers
+    df_anomalies['y_pred_rules_outliers'] = list_pred_outliers
+    
+    # Representativeness metrics (II)
     df_rules_inliers["n_inliers"] = n_inliers
     df_rules_inliers["n_inliers_p0"] = n_inliers_p0
     df_rules_inliers["n_inliers_p1"] = n_inliers_p1
     df_rules_outliers["n_outliers"] = n_outliers
     df_rules_outliers["n_outliers_p1"] = n_outliers_p1
     df_rules_outliers["n_outliers_p0"] = n_outliers_p0
-
+    
+    # Drop unnecessary columns
     df_rules_outliers = df_rules_outliers.drop(columns=["check"], errors="ignore")
     df_rules_inliers = df_rules_inliers.drop(columns=["check"], errors="ignore")
-
-    return df_rules_inliers, df_rules_outliers
-
-
+    
+    # Fidelity metrics
+    df_aux = df_anomalies[['predictions', 'y_pred_rules_inliers',
+                           'y_pred_rules_outliers', 'dist']].copy()
+    
+    precision_rules_inliers = precision_score(df_anomalies['predictions'],
+                                              df_anomalies['y_pred_rules_inliers'])
+    precision_rules_outliers = precision_score(df_anomalies['predictions'],
+                                               df_anomalies['y_pred_rules_outliers']) 
+    recall_rules_inliers = recall_score(df_anomalies['predictions'],
+                                        df_anomalies['y_pred_rules_inliers']) 
+    recall_rules_outliers = recall_score(df_anomalies['predictions'],
+                                         df_anomalies['y_pred_rules_outliers']) 
+    f1_rules_inliers = recall_score(df_anomalies['predictions'],
+                                    df_anomalies['y_pred_rules_inliers'],
+                                    average = "weighted") 
+    f1_rules_outliers = recall_score(df_anomalies['predictions'],
+                                     df_anomalies['y_pred_rules_outliers'],
+                                     average = "weighted") 
+    
+    df_rules_inliers['precision_rules'] = precision_rules_inliers
+    df_rules_inliers['recall_rules'] = recall_rules_inliers
+    df_rules_inliers['f1_rules'] = f1_rules_inliers
+    
+    df_rules_outliers['precision_rules'] = precision_rules_outliers
+    df_rules_outliers['recall_rules'] = recall_rules_outliers
+    df_rules_outliers['f1_rules'] = f1_rules_outliers
+    
+    # =======================================================================
+    # Focus on the abnormal
+    # =======================================================================
+    cols_choose = ['predictions', 'y_pred_rules_inliers',
+                   'y_pred_rules_outliers', 'dist']
+    df_aux = df_anomalies[cols_choose].copy()
+    
+    # Get IQR
+    sen_sup = 1.5
+    sen_inf = 1.5
+    data = df_anomalies['dist']
+    upper_quartile = np.percentile(data, 75)
+    lower_quartile = np.percentile(data, 25)
+    iqr = upper_quartile - lower_quartile
+    
+    # Get Limits
+    lim_sup = upper_quartile + sen_sup*iqr
+    lim_inf = lower_quartile - sen_inf*iqr
+    
+    # Filter for furthest datapoints to the decision function
+    df_aux = df_aux[(df_aux['dist']>=lim_sup) | (df_aux['dist']<=lim_inf)]
+    
+    # Ensure there is at least one inlier (the furthest to the decision function)
+    if len(df_aux[df_aux['predictions']==1])==0:
+        df_aux = (df_aux
+                  .append(df_anomalies[cols_choose][df_anomalies['predictions']==1]
+                          .sort_values(by=['dist'], ascending=False)
+                          .head(1)
+                          )
+                  )
+    # Ensure there is at least one outlier (the furthest to the decision function)
+    if len(df_aux[df_aux['predictions']==-1])==0:
+        df_aux = (df_aux
+                  .append(df_anomalies[cols_choose][df_anomalies['predictions']==-1]
+                          .sort_values(by=['dist'], ascending=True)
+                          .head(1)
+                          )
+                  )
+    
+    precision_rules_inliers = precision_score(df_aux['predictions'],
+                                              df_aux['y_pred_rules_inliers'])
+    precision_rules_outliers = precision_score(df_aux['predictions'],
+                                               df_aux['y_pred_rules_outliers']) 
+    recall_rules_inliers = recall_score(df_aux['predictions'],
+                                        df_aux['y_pred_rules_inliers']) 
+    recall_rules_outliers = recall_score(df_aux['predictions'],
+                                         df_aux['y_pred_rules_outliers']) 
+    f1_rules_inliers = recall_score(df_aux['predictions'],
+                                    df_aux['y_pred_rules_inliers'],
+                                    average = "weighted") 
+    f1_rules_outliers = recall_score(df_aux['predictions'],
+                                     df_aux['y_pred_rules_outliers'],
+                                     average = "weighted") 
+    
+    df_rules_inliers['precision_rules_abnormal'] = precision_rules_inliers
+    df_rules_inliers['recall_rules_abnormal'] = recall_rules_inliers
+    df_rules_inliers['f1_rules_abnormal'] = f1_rules_inliers
+    
+    df_rules_outliers['precision_rules_abnormal'] = precision_rules_outliers
+    df_rules_outliers['recall_rules_abnormal'] = recall_rules_outliers
+    df_rules_outliers['f1_rules_abnormal'] = f1_rules_outliers
+    
+    return df_rules_inliers, df_rules_outliers, df_anomalies
 
 
 

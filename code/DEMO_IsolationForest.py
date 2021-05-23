@@ -12,7 +12,7 @@ import sys
 from sklearn.ensemble import IsolationForest
 from sklearn.metrics import classification_report
 from lib.xai_auxiliary_rule_extraction import generateRuleHypercubes
-from lib.xai_rule_metrics import (checkRepresentativeness, 
+from lib.xai_rule_metrics import (checkFidelity, 
                                   checkStability,
                                   checkDiversity)
 from lib.xai_tools import plot_2D, loadDatasets
@@ -26,6 +26,7 @@ numerical_cols = ["gdenergy", "gdpuls"]  # 2D
 categorical_cols = []
 df_input = (df_input[numerical_cols + categorical_cols + ['target_class']]
             .drop_duplicates(subset = numerical_cols + categorical_cols)
+            .reset_index(drop=True)
             )
 
 # Train model & Get predictions
@@ -88,7 +89,6 @@ for method in [
         .replace(np.inf, max_replace)
         .replace(-np.inf, min_replace)
     )
-
     plot_2D(df_inliers_plot, df_anomalies, title = method + ' (Inliers)')
     plot_2D(df_outliers_plot, df_anomalies, title = method + ' (Outliers)')
     
@@ -105,16 +105,10 @@ for method in [
     mean_rule_size_inliers = df_rules_inliers['size_rules'].mean()
     mean_rule_size_outliers = df_rules_outliers['size_rules'].mean()
     
-    # Representativeness (vs ground truth) [a.k.a XAI "precision"]
-    df_rules_inliers_gt, df_rules_outliers_gt = checkRepresentativeness(
+    # Fidelity/Representativeness/Focus on Abnormal
+    df_rules_inliers, df_rules_outliers, df_anomalies = checkFidelity(
         df_anomalies, df_rules_inliers, df_rules_outliers, numerical_cols, 
-        categorical_cols, col_predictions = "target_class"
-        )
-    
-    # Representativeness (vs model)
-    df_rules_inliers, df_rules_outliers = checkRepresentativeness(
-        df_anomalies, df_rules_inliers, df_rules_outliers, numerical_cols, 
-        categorical_cols, col_predictions = "predictions"
+        categorical_cols
         )
     
     # Stability

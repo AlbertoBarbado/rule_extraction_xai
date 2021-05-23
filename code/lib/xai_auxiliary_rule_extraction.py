@@ -683,7 +683,7 @@ def skoperules_rules(
     y_train = df_aux["predictions"]
 
     df_rules_inliers = _getSkopeRules(X_train, y_train, model_params)
-    df_rules_inliers["rulse_prediction"] = 1
+    df_rules_inliers["rules_prediction"] = 1
 
     ### Outliers
     # Prepare Data
@@ -697,7 +697,7 @@ def skoperules_rules(
     y_train = df_aux["predictions"]
 
     df_rules_outliers = _getSkopeRules(X_train, y_train, model_params)
-    df_rules_outliers["rulse_prediction"] = -1
+    df_rules_outliers["rules_prediction"] = -1
 
     return df_rules_inliers, df_rules_outliers
 

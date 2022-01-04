@@ -18,7 +18,7 @@ sys.modules["sklearn.externals.six"] = six
 from joblib import Parallel, delayed
 from sklearn import tree
 from sklearn.tree import export_text
-from alibi.explainers import AnchorTabular
+# from alibi.explainers import AnchorTabular
 from rulefit import RuleFit
 from skrules import SkopeRules
 from lib.xai_rule_processing import simplifyRules
@@ -29,7 +29,7 @@ from aix360.algorithms.rbm import (
     GLRMExplainer,
 )
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from interpret.glassbox import DecisionListClassifier
+# from interpret.glassbox import DecisionListClassifier
 from lib.external import ruleset
 from lib.xai_rule_processing import turn_rules_to_df
 
@@ -104,6 +104,7 @@ def generateRuleHypercubes(
             method, list_methods
         )
         raise ValueError(msg_err)
+        
     ## Decision Tree
     if method == "DecisionTree":
         df_rules_inliers, df_rules_outliers = surrogate_dt_rules(
@@ -142,13 +143,14 @@ def generateRuleHypercubes(
         )
     ## Decision Rules List
     elif method == "DecisionRuleList":
-        df_rules_inliers, df_rules_outliers = decisionListClassifier(
-            df_anomalies=df_anomalies,
-            numerical_cols=numerical_cols,
-            categorical_cols=categorical_cols,
-            simplify_rules=simplify_rules,
-            model_params=model_params,
-        )
+        # df_rules_inliers, df_rules_outliers = decisionListClassifier(
+        #     df_anomalies=df_anomalies,
+        #     numerical_cols=numerical_cols,
+        #     categorical_cols=categorical_cols,
+        #     simplify_rules=simplify_rules,
+        #     model_params=model_params,
+        # )
+        raise ValueError("Not Implemented!")
     ## BRLG or LOGRR
     elif method == "brlg" or method == "logrr":
         df_rules_inliers, df_rules_outliers = aix360_rules_wrapper(
@@ -385,6 +387,10 @@ def rulefit_rules(
     """
 
     def _getRulesRulefit(df_aux, model_params):
+        
+        # min_importance = 0
+        min_importance = 0.1
+        
         # Prepare data
         X_train = df_aux[feature_cols]
         y_train = df_aux["predictions"]
@@ -401,7 +407,7 @@ def rulefit_rules(
         print("Obtaining Rules using RuleFit...")
         rules_all = rf.get_rules()
         rules_all = rules_all[rules_all.coef != 0]
-        rules_all = rules_all[rules_all.importance > 0].sort_values(
+        rules_all = rules_all[rules_all.importance > min_importance].sort_values(
             "support", ascending=False
         )
         rules_all = rules_all[rules_all.coef > 0]
@@ -414,7 +420,8 @@ def rulefit_rules(
         # Turn list of rules to dataframe
         print("Turning rules to hypercubes...")
         df_rules = turn_rules_to_df(
-            list_rules=list(rules_all["rule"].values), list_cols=feature_cols
+            list_rules = list(rules_all["rule"].values),
+            list_cols = feature_cols
         )
 
         # Get corresponding rule size from the original rule extraction model,
@@ -447,6 +454,7 @@ def rulefit_rules(
         df_rules_inliers["rule_prediction"] = -1
     else:
         df_rules_inliers = pd.DataFrame()
+        
     ### Outliers
     df_outliers = df_anomalies.copy()
     df_outliers["predictions"] = df_outliers.apply(
@@ -519,7 +527,9 @@ def frl_rules(
                         else:
                             if np.float(aux[0]) >= dct_aux[col + "_min"]:
                                 dct_aux[col + "_min"] = np.float(aux[0])
+                                
             df_rules = df_rules.append(pd.DataFrame(dct_aux, index=[0]))
+            
         return df_rules
 
     feature_cols = numerical_cols + categorical_cols
@@ -528,6 +538,7 @@ def frl_rules(
     ### Rules for Inliers
     y = df_anomalies["predictions"].values
     y = np.array([x if x > 0 else 0 for x in y])
+    # model_params = {'maxlen':4, 'support':1, 'level':10, 'method':'forest'}
     model_rules = ruleset.BayesianRuleSet(**model_params)
     model_rules.fit(X, y)
     dict_rules = model_rules.rule_explainations
@@ -541,7 +552,7 @@ def frl_rules(
         if simplify_rules:
             print("Prunning the rules obtained...")
             df_inliers = df_inliers.reset_index(drop=True)
-            df_rules_pruned = df_inliers.drop(columns=["size_rules"]).copy()
+            df_rules_pruned = df_inliers.drop(columns=["size_rules"]).copy().drop_duplicates(reset_index=True)
             df_rules_pruned = simplifyRules(df_rules_pruned, categorical_cols)
             df_rules_pruned = df_rules_pruned.reset_index().merge(
                 df_inliers.reset_index()[["index", "size_rules"]], how="left"
@@ -552,6 +563,7 @@ def frl_rules(
             df_rules_inliers["rule_prediction"] = 1
     else:
         df_rules_inliers = pd.DataFrame()
+        
     #### Rules for Outliers
     y = df_anomalies["predictions"].values
     y = np.array([1 if x < 0 else 0 for x in y])
@@ -568,7 +580,7 @@ def frl_rules(
         if simplify_rules:
             print("Prunning the rules obtained...")
             df_outliers = df_outliers.reset_index(drop=True)
-            df_rules_pruned = df_outliers.drop(columns=["size_rules"]).copy()
+            df_rules_pruned = df_outliers.drop(columns=["size_rules"]).copy().drop_duplicates(reset_index=True)
             df_rules_pruned = simplifyRules(df_rules_pruned, categorical_cols)
             df_rules_pruned = df_rules_pruned.reset_index().merge(
                 df_outliers.reset_index()[["index", "size_rules"]], how="left"
@@ -616,6 +628,7 @@ def skoperules_rules(
     """
 
     def _getSkopeRules(X_train, y_train, model_params):
+        
         # Rules
         print("Obtaining Rules using SkopeRules...")
         clf = SkopeRules(**model_params)
@@ -667,11 +680,12 @@ def skoperules_rules(
         rng = np.random.RandomState(42)
         model_params["random_state"] = rng
     if "precision_min" not in model_params.keys():
-        model_params["precision_min"] = 0.5
+        model_params["precision_min"] = 0.75
     if "recall_min" not in model_params.keys():
         model_params["recall_min"] = 0.01
     if "feature_names" not in model_params.keys():
         model_params["feature_names"] = feature_cols
+        
     ### Inliers
     # Prepare Data
     df_aux = df_anomalies.copy()
@@ -702,106 +716,106 @@ def skoperules_rules(
     return df_rules_inliers, df_rules_outliers
 
 
-def decisionListClassifier(
-    df_anomalies,
-    numerical_cols,
-    categorical_cols,
-    simplify_rules=False,
-    model_params={},
-):
-    """
+# def decisionListClassifier(
+#     df_anomalies,
+#     numerical_cols,
+#     categorical_cols,
+#     simplify_rules=False,
+#     model_params={},
+# ):
+#     """
 
-    Rules obtained using Skope RulesDecision Lists.
+#     Rules obtained using Skope RulesDecision Lists.
 
-    Parameters
-    ----------
-    df_anomalies : TYPE
-        DESCRIPTION.
-    model : TYPE
-        DESCRIPTION.
-    numerical_cols : TYPE
-        DESCRIPTION.
-    categorical_cols : TYPE
-        DESCRIPTION.
-    simplify_rules : TYPE, optional
-        DESCRIPTION. The default is False.
-    model_params : TYPE, optional
-        DESCRIPTION. The default is {}.
+#     Parameters
+#     ----------
+#     df_anomalies : TYPE
+#         DESCRIPTION.
+#     model : TYPE
+#         DESCRIPTION.
+#     numerical_cols : TYPE
+#         DESCRIPTION.
+#     categorical_cols : TYPE
+#         DESCRIPTION.
+#     simplify_rules : TYPE, optional
+#         DESCRIPTION. The default is False.
+#     model_params : TYPE, optional
+#         DESCRIPTION. The default is {}.
 
-    Returns
-    -------
-    TYPE
-        DESCRIPTION.
+#     Returns
+#     -------
+#     TYPE
+#         DESCRIPTION.
 
-    """
+#     """
 
-    # Prepare data
-    print(numerical_cols, categorical_cols)
-    feature_cols = numerical_cols + categorical_cols
-    X = df_anomalies[feature_cols]
-    y = df_anomalies[["predictions"]]
+#     # Prepare data
+#     print(numerical_cols, categorical_cols)
+#     feature_cols = numerical_cols + categorical_cols
+#     X = df_anomalies[feature_cols]
+#     y = df_anomalies[["predictions"]]
 
-    # Get Rules
-    dlc = DecisionListClassifier(**model_params)
-    dlc.fit(X, y)
-    dlc_global = dlc.explain_global(name="Decision List Classifier")
-    dct_dlc = dlc_global.data()
-    df_rules = pd.DataFrame(
-        {"rules": dct_dlc["rule"], "predictions": dct_dlc["outcome"]}
-    )
-    df_rules = df_rules[df_rules["rules"] != "No Rules Triggered"]
+#     # Get Rules
+#     dlc = DecisionListClassifier(**model_params)
+#     dlc.fit(X, y)
+#     dlc_global = dlc.explain_global(name="Decision List Classifier")
+#     dct_dlc = dlc_global.data()
+#     df_rules = pd.DataFrame(
+#         {"rules": dct_dlc["rule"], "predictions": dct_dlc["outcome"]}
+#     )
+#     df_rules = df_rules[df_rules["rules"] != "No Rules Triggered"]
 
-    ### Rules for Inliers
-    print("Rules for inliers...")
-    df_aux = df_rules[df_rules["predictions"] == 1]
+#     ### Rules for Inliers
+#     print("Rules for inliers...")
+#     df_aux = df_rules[df_rules["predictions"] == 1]
 
-    if len(df_aux) > 0:
-        list_rules_inliers = list(df_aux["rules"])
-        list_rules_inliers = [x.replace(" and ", " & ") for x in list_rules_inliers]
-        print("Turning rules to hypercubes...")
-        df_rules_results = turn_rules_to_df(
-            list_rules=list_rules_inliers, list_cols=feature_cols
-        )
-        df_rules_results["size_rules"] = [len(x.split("&")) for x in list_rules_inliers]
-        df_rules_pruned = simplifyRules(
-            df_rules_results.drop(columns=["size_rules"]), categorical_cols
-        )
-        df_rules_pruned = df_rules_pruned.reset_index().merge(
-            df_rules_results.reset_index()[["index", "size_rules"]], how="left"
-        )
-        df_rules_pruned.index = df_rules_pruned["index"]
-        df_rules_pruned = df_rules_pruned.drop(columns=["index"], errors="ignore")
-        df_rules_inliers = df_rules_pruned.copy()
-        df_rules_inliers["rule_prediction"] = 1
-    else:
-        df_rules_inliers = pd.DataFrame()
-    ### Rules for Outliers
-    print("Rules for inliers...")
-    df_aux = df_rules[df_rules["predictions"] == -1]
+#     if len(df_aux) > 0:
+#         list_rules_inliers = list(df_aux["rules"])
+#         list_rules_inliers = [x.replace(" and ", " & ") for x in list_rules_inliers]
+#         print("Turning rules to hypercubes...")
+#         df_rules_results = turn_rules_to_df(
+#             list_rules=list_rules_inliers, list_cols=feature_cols
+#         )
+#         df_rules_results["size_rules"] = [len(x.split("&")) for x in list_rules_inliers]
+#         df_rules_pruned = simplifyRules(
+#             df_rules_results.drop(columns=["size_rules"]), categorical_cols
+#         )
+#         df_rules_pruned = df_rules_pruned.reset_index().merge(
+#             df_rules_results.reset_index()[["index", "size_rules"]], how="left"
+#         )
+#         df_rules_pruned.index = df_rules_pruned["index"]
+#         df_rules_pruned = df_rules_pruned.drop(columns=["index"], errors="ignore")
+#         df_rules_inliers = df_rules_pruned.copy()
+#         df_rules_inliers["rule_prediction"] = 1
+#     else:
+#         df_rules_inliers = pd.DataFrame()
+#     ### Rules for Outliers
+#     print("Rules for inliers...")
+#     df_aux = df_rules[df_rules["predictions"] == -1]
 
-    if len(df_aux) > 0:
-        list_rules_outliers = list(df_aux["rules"])
-        list_rules_outliers = [x.replace(" and ", " & ") for x in list_rules_outliers]
-        print("Turning rules to hypercubes...")
-        df_rules_results = turn_rules_to_df(
-            list_rules=list_rules_outliers, list_cols=feature_cols
-        )
-        df_rules_results["size_rules"] = [
-            len(x.split("&")) for x in list_rules_outliers
-        ]
-        df_rules_pruned = simplifyRules(
-            df_rules_results.drop(columns=["size_rules"]), categorical_cols
-        )
-        df_rules_pruned = df_rules_pruned.reset_index().merge(
-            df_rules_results.reset_index()[["index", "size_rules"]], how="left"
-        )
-        df_rules_pruned.index = df_rules_pruned["index"]
-        df_rules_pruned = df_rules_pruned.drop(columns=["index"], errors="ignore")
-        df_rules_outliers = df_rules_pruned.copy()
-        df_rules_outliers["rule_prediction"] = -1
-    else:
-        df_rules_outliers = pd.DataFrame()
-    return df_rules_inliers, df_rules_outliers
+#     if len(df_aux) > 0:
+#         list_rules_outliers = list(df_aux["rules"])
+#         list_rules_outliers = [x.replace(" and ", " & ") for x in list_rules_outliers]
+#         print("Turning rules to hypercubes...")
+#         df_rules_results = turn_rules_to_df(
+#             list_rules=list_rules_outliers, list_cols=feature_cols
+#         )
+#         df_rules_results["size_rules"] = [
+#             len(x.split("&")) for x in list_rules_outliers
+#         ]
+#         df_rules_pruned = simplifyRules(
+#             df_rules_results.drop(columns=["size_rules"]), categorical_cols
+#         )
+#         df_rules_pruned = df_rules_pruned.reset_index().merge(
+#             df_rules_results.reset_index()[["index", "size_rules"]], how="left"
+#         )
+#         df_rules_pruned.index = df_rules_pruned["index"]
+#         df_rules_pruned = df_rules_pruned.drop(columns=["index"], errors="ignore")
+#         df_rules_outliers = df_rules_pruned.copy()
+#         df_rules_outliers["rule_prediction"] = -1
+#     else:
+#         df_rules_outliers = pd.DataFrame()
+#     return df_rules_inliers, df_rules_outliers
 
 
 def aix360_rules_wrapper(
@@ -853,9 +867,35 @@ def aix360_rules_wrapper(
 
     # Feature binarize
     fb = FeatureBinarizer(
-        negations=True, returnOrd=True, colsCateg=categorical_cols, numThres=90
+        negations = True,
+        returnOrd = True, 
+        colsCateg = categorical_cols,
+        numThres = 90
     )
     X_fb, X_std = fb.fit_transform(X)
+    
+    '''
+    # Check if duplicates:
+    if len(X_fb.drop_duplicates())<len(X_fb):
+        X_fb = X_fb.drop_duplicates()
+        X_std = X_std[X_std.index.isin(X_fb.index)]
+        
+        n = 0
+        y_inliers_n = []
+        for i in y_inliers:
+            if n in list(X_fb.index):
+                y_inliers_n += [i]
+            n += 1
+        y_inliers = np.array(y_inliers_n)
+        
+        n = 0
+        y_outliers_n = []
+        for i in y_outliers:
+            if n in list(X_fb.index):
+                y_outliers_n += [i]
+            n += 1
+        y_outliers = np.array(y_outliers_n)
+    '''
 
     # Choose model
     if rule_algorithm == "brlg":
@@ -867,6 +907,7 @@ def aix360_rules_wrapper(
             model_params["lambda1"] = 1e-3
         if "CNF" not in model_params.keys():
             model_params["CNF"] = False
+            
         # Inliers
         model_rules = BooleanRuleCG(**model_params)
         model_rules.fit(X_fb, y_inliers)
@@ -876,6 +917,7 @@ def aix360_rules_wrapper(
         model_rules = BooleanRuleCG(**model_params)
         model_rules.fit(X_fb, y_outliers)
         list_rules_outliers = model_rules.explain()["rules"]
+        
     elif rule_algorithm == "logrr":
 
         # Default params

@@ -58,6 +58,7 @@ def loadDatasets(f_name=""):
         "seismic-bumps",
         "shuttle",
         "speech",
+        "sample-seismic"
     ]
 
     if f_name not in list_datasets:
@@ -66,7 +67,23 @@ def loadDatasets(f_name=""):
         )
         raise ValueError(msg_err)
         
-    if f_name == "forest_cover":
+    if f_name == "sample-seismic":
+        # Sample dataset for illustrative purposes
+        # Source dataset (I): http://odds.cs.stonybrook.edu/seismic-dataset/
+        # Source dataset (II): https://archive.ics.uci.edu/ml/datasets/seismic-bumps#
+        # Hazard is the anomalous class: outlier if hazard>0
+        df_input = pd.read_csv("{0}/sample_seismic.csv".format(PATH_DATASETS))
+        df_input = df_input.rename(columns={"hazard": "target_class"})
+        # Specify target class value
+        df_input["target_class"] = df_input.apply(
+            lambda x: -1 if x["target_class"] > 0 else 1, axis=1
+        )
+        
+        numerical_cols = ['gdenergy', 'gdpuls']
+        categorical_cols = []
+        
+        
+    elif f_name == "forest_cover":
         # Source dataset: http://odds.cs.stonybrook.edu/forestcovercovertype-dataset/
         file_raw = loadmat("{0}/cover.mat".format(PATH_DATASETS))
         X, y = file_raw["X"], file_raw["y"]

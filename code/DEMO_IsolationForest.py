@@ -10,29 +10,57 @@ import pandas as pd
 import os
 import sys
 from sklearn.ensemble import IsolationForest
+from sklearn.svm import OneClassSVM
+from sklearn.neighbors import LocalOutlierFactor
 from sklearn.metrics import classification_report
 from lib.xai_auxiliary_rule_extraction import generateRuleHypercubes
-from lib.xai_rule_metrics import (checkFidelity, 
-                                  checkStability,
-                                  checkDiversity)
+from lib.xai_rule_metrics import (
+    checkFidelity, 
+    checkStability,
+    checkDiversity
+    )
 from lib.xai_tools import plot_2D, loadDatasets
 
 import warnings
 warnings.filterwarnings("ignore")
 
 # Load data
-df_input, _, _ = loadDatasets(f_name = "seismic-bumps")
+#df_input, _, _ = loadDatasets(f_name = "seismic-bumps")
+df_input, _, _ = loadDatasets(f_name = "sample-seismic")
 numerical_cols = ["gdenergy", "gdpuls"]  # 2D
 categorical_cols = []
-df_input = (df_input[numerical_cols + categorical_cols + ['target_class']]
-            .drop_duplicates(subset = numerical_cols + categorical_cols)
-            .reset_index(drop=True)
+df_input = (
+    df_input[numerical_cols + categorical_cols + ['target_class']]
+    .drop_duplicates(subset = numerical_cols + categorical_cols)
+    .reset_index(drop=True)
             )
 
-# Train model & Get predictions
+# Train dataset
 df_train = df_input.copy().drop(columns=['target_class'])
-clf = IsolationForest()
+
+# Choose model & train it & get predictions
+dct_params = {
+    'n_estimators': 50, 
+    'max_samples' : 'auto',
+    'contamination': float(0.1),
+    'max_features': 1.0
+    }
+clf = IsolationForest(**dct_params)
+
+'''
+dct_params = {'nu': 0.1, 'kernel': "rbf", 'gamma': 'scale'}
+clf = OneClassSVM(**dct_params)
+'''
+
 y_pred_train = clf.fit_predict(df_train)
+
+'''
+dct_params = {'novelty': True} # novelty must be always be True for getting the decision_function
+clf = LocalOutlierFactor(**dct_params)
+clf = clf.fit(df_train)
+y_pred_train = clf.predict(df_train)
+'''
+
 dist = clf.decision_function(df_train)
 df_anomalies = df_input.copy()
 df_anomalies["predictions"] = y_pred_train
@@ -48,7 +76,7 @@ method = "DecisionTree"
 method = "RuleFit"
 method = "FRL"
 method = "SkopeRules"
-method = "DecisionRuleList"
+# method = "DecisionRuleList"
 method = "brlg"
 method = "logrr"
 
@@ -57,7 +85,7 @@ for method in [
     "RuleFit",
     "FRL",
     "SkopeRules",
-    "DecisionRuleList",
+    # "DecisionRuleList",
     "brlg",
     "logrr",
 ]:
@@ -107,24 +135,41 @@ for method in [
     
     # Fidelity/Representativeness/Focus on Abnormal
     df_rules_inliers, df_rules_outliers, df_anomalies = checkFidelity(
-        df_anomalies, df_rules_inliers, df_rules_outliers, numerical_cols, 
+        df_anomalies,
+        df_rules_inliers,
+        df_rules_outliers,
+        numerical_cols, 
         categorical_cols
         )
     
     # Stability
-    df_rules_inliers = checkStability(df_anomalies, df_rules_inliers, clf,
-                                      numerical_cols, categorical_cols,
-                                      using_inliers = True)
-    df_rules_outliers = checkStability(df_anomalies, df_rules_outliers, clf,
-                                       numerical_cols, categorical_cols,
-                                       using_inliers = False)
+    df_rules_inliers = checkStability(
+        df_anomalies, 
+        df_rules_inliers, 
+        clf,
+        numerical_cols,
+        categorical_cols,
+        using_inliers = True
+        )
+    df_rules_outliers = checkStability(
+        df_anomalies,
+        df_rules_outliers, 
+        clf,
+        numerical_cols, 
+        categorical_cols,
+        using_inliers = False
+        )
    
     # Diversity
-    df_rules_inliers, _ = checkDiversity(df_rules_inliers, 
-                                         numerical_cols, 
-                                         categorical_cols)
-    df_rules_outliers, _ = checkDiversity(df_rules_outliers, 
-                                          numerical_cols, 
-                                          categorical_cols)
+    df_rules_inliers, _ = checkDiversity(
+        df_rules_inliers, 
+        numerical_cols, 
+        categorical_cols
+        )
+    df_rules_outliers, _ = checkDiversity(
+        df_rules_outliers, 
+        numerical_cols, 
+        categorical_cols
+        )
     
     
